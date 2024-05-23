@@ -5,6 +5,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
+        <!-- esto es la fuente de la letra -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <!--esto es para que el ucno de la pantlla ese adaptado en dfereentes dispisitivios -->
         <link rel="icon" href="gif/icon.png" type="image/x-icon">
 <link rel="icon" href="gif/icon.png" type="image/png">
@@ -49,6 +53,67 @@
         background-size: cover;
                 }
             }
+   /* Animación de sacudida de izquierda a derecha */
+.shake-left-right {
+  animation: shake-left-right 0.8s linear both;
+}
+
+@keyframes shake-left-right {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-10deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
+
+/* Animación de balanceo vertical hacia la izquierda para el pie de página con el símbolo en color rosa */
+.wobble-vertical-left {
+  animation: wobble-vertical-left 0.8s linear both;
+}
+
+@keyframes wobble-vertical-left {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
         </style>
     </head>
     <body>
@@ -62,7 +127,10 @@
                   <a class="nav-link" href="regristro.html">regristro</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">imagen </a>
+                  <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tabla.html">tabla</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled" aria-disabled="true">Saimon.com</a>
@@ -75,23 +143,27 @@
           <hr>
           <br>
           <br>
-          <hr style="color: aliceblue;">
+          <p class="placeholder-glow" style="color: #9d2447;">
+            <span class="placeholder col-12"></span>
+          </p>
          
           <div class="card" style="width: 18rem;">
             <img src="gif/xd1.jpg" class="card-img-top" alt="..." width="100vh">
             
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">hello i´m Saimon </h5>
+              <p class="card-text">Soy un joven de 19 años, luchando con mi salud mental y los efectos traumáticos de un accidente. La historia comienza cuando despierto en un mundo extraño y oscuro después de ser atropellado por un coche. Armado con apenas un cuchillo y una linterna, me enfrento a criaturas horrendas y entornos perturbadores mientras busco respuestas y trato de encontrar el camino de regreso a casa. Mi viaje es una mezcla de terror psicológico y horror de supervivencia, donde las líneas entre la realidad y la pesadilla se difuminan. Mi historia es profundamente personal y dolorosa, reflejando mis miedos más oscuros y mi lucha interna</p>
              
             </div>
           </div>
 <br>
 <br>
 <br>
-<hr style="color:aliceblue;">
-
-           <header>
+<p class="placeholder-glow" style="color: #9d2447;">
+  <span class="placeholder col-12"></span>
+</p>
+<div class="ratio ratio-21x9">
+  <header>
   
     <div class="overlay"></div>
     <div class="Absolute" >
@@ -101,7 +173,30 @@
             <source src="video/simon bailando.mp4">
         </video>
 </header>
+</div>
+<p class="placeholder-glow">
+  <span class="placeholder col-12" style="color: #9d2447;"></span>
+</p>
+<br>  
+<nav class="navbar bg-body-tertiary">
+  <div class="container" >
+    <a class="navbar-brand" href="#">
+      <img src="gif/icon.png" alt="Bootstrap" width="60" height="44" class="wobble-vertical-left">
+    </a>
+    <!--aca van mis redes sociales -->
+    <div class="position-absolute top-50 end-0 translate-middle-y">
+     <a href="https://github.com/PanchitoKun"><img src="gif/contacto.jpg" class="shake-left-right" alt="Bootstrap" width="60" height="44"></a>
+
+    </div>
+  </div>
+</nav>
+<br />
+<p class="placeholder-wave" style="color: #9d2447;">
+  <span class="placeholder col-12"></span>
+</p>
     </body>
 </html>
+
+
 
 

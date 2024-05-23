@@ -4,57 +4,28 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
-    <!--ES CND DATATABLES-->
-<link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.dataTables.css" />
-<script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!-- ruta de carpeta de boostrap css -->
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <!-- este es cnd de JQUERY-->
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<!--ESTE CODIGO INTENTA ADAPTAR A TODOS LOS DISPOSITIVOS -->
-<style media="screen">
-    body {
-background: url('gif/FONDO\ DE\ PAGINA.png') no-repeat center center fixed;
-background-size: cover;
-}
-    @media (min-width: 576px) {
-        body {
-background: url('gif/FONDO\ DE\ PAGINA.png') no-repeat center center fixed;
-background-size: cover;
-}
-    }
+    <!--ES CND DATATABLES-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+<!-- este es cnd de JQUERY-->
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
 
-    @media (min-width: 768px) {
-        body {
-background: url('gif/FONDO\ DE\ PAGINA.png') no-repeat center center fixed;
-background-size: cover;
-}
-    }
 
-    @media (min-width: 992px) {
-        body {
-background: url('gif/DEVI\ SAIMON\ 1.jpg') no-repeat center center fixed;
-background-size: cover;
-}
-    }
-
-    @media (min-width: 1200px) {
-        body {
-            background: url('gif/FONDO\ DE\ PAGINA.png') no-repeat center center fixed;
-background-size: cover;
-        }
-    }
-</style>
-<!---TERMINA EL CODIGO -->
+</head>
 <!--Inicializando tablas de datos DATATABLES-->
 <script>
     $(document).ready( function () {
         $('#myTable').DataTable();
     } );
         </script>
-</head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -93,11 +64,39 @@ background-size: cover;
         </div>
       </nav>
       <br>
-<div class="CONTAINER mt-5 tab-content">
-
+      <div class="container m-5 table-container">
+        <table id="mytable" class="table-bordered">
+            <thead>
+              <tr>
+                <th >id</th>
+                <th >First</th>
+                <th >Last</th>
+                <th>Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th >1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th >3</th>
+                <td>Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
 </div>
-
     <!-- ruta de carpeta de boostrap JS -->
-    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>"
+<script src="bootstrap-5.3.3-dist/js/bootstrap.min.js">
 </body>
 </html>
